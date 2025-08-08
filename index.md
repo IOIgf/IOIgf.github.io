@@ -113,6 +113,6 @@ r=new XMLHttpRequest();r.open('DELETE',
 );r.send();
 ```
 
-把帖子ID改为你要删的帖子名，即可删帖。（注意，这个只能删团队帖，且你要是管理员）
+把帖子ID改为你要删的帖子名，即可删帖（注意，这个只能删团队帖，且你要是管理员）。
 
 3.[洛谷工具站](https://luogu.codingoier.com/)
