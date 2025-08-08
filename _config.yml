@@ -1,1 +1,5 @@
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-remote-theme
+title: OrangeOI 出题组
+description: 算法竞赛题目创作团队
