@@ -4,3 +4,6 @@ plugins:
 markdown: kramdown
 include:
   - assets/images/favicon.ico
+sass:
+  sass_dir: assets/css
+  style: compressed
