@@ -1,5 +1,6 @@
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-remote-theme
+markdown: kramdown
 include:
   - assets/images/favicon.ico
