@@ -22,7 +22,7 @@ MathJax.Hub.Config({
 
 ## 我们的团队
 （请您先登录洛谷网站，再打开本网站）
-<iframe src="https://www.luogu.com.cn/team/95177" width="150%" height="600" style="border:none;"></iframe>
+<iframe src="https://www.luogu.com.cn/team/95177" width="150%" height="500" style="border:none;"></iframe>
 
 ## 关于我们
 这是由 [@2022_37_yzyUUU](https://www.luogu.com.cn/user/785636) 创立的团队。
@@ -72,3 +72,4 @@ $\color{green}{\textsf{gh\_AC}}$：【为团队做出贡献】
 r=new XMLHttpRequest();
 r.open('DELETE','https://www.luogu.com.cn/api/discuss/delete/帖子ID');
 r.send();
+```
