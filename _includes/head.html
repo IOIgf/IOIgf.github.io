@@ -1,26 +1,27 @@
-<head>
-    <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
-    <!-- 引入KaTeX的CSS样式 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha256-O8RMkKlt1IGKwYyfREICq9Zy1DNOgU0zXCDXrM/h1Hg=" crossorigin="anonymous">
+<!-- 先加载主题CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-    <!-- 引入KaTeX的JavaScript库 -->
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha256-6R/fxk9b+1bH+y4dfOXAkFfOeOdqozgoU/PfUB5/eFU=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha256-KmrW4m6Qd7Gr5fflLjC0cezAlRny7HbB8Pj2YOI5D4k=" crossorigin="anonymous"></script>
+<!-- 后加载自定义覆盖样式 -->
+<style>
+  iframe {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  .admins span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+</style>
 
-    <!-- 配置KaTeX自动渲染 -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            renderMathInElement(document.body, {
-                // 配置选项
-                delimiters: [
-                    {left: "$$", right: "$$", display: true},
-                    {left: "$", right: "$", display: false},
-                    {left: "\\(", right: "\\)", display: false},
-                    {left: "\\[", right: "\\]", display: true}
-                ],
-                // 支持Escaping
-                throwOnError: false
-            });
-        });
-    </script>
-</head>
+<!-- MathJax配置 -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
